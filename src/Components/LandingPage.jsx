@@ -16,8 +16,8 @@ function LandingPage() {
                             <motion.div initial={{width:0}} 
                                  animate={{width: "8vw"}} 
                                  transition= {{ ease: [0.76, 0, 0.24, 1], duration : 1 }}
-                                  className='mr-3 w-[8vw] h-[4.5vw] overflow-hidden object-fill  mt-1 rounded-md bg-red-100 relative'>
-                                 <img className= 'rounded-3xl' src="https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg" alt="" />
+                                  className='mr-3 w-[8vw] h-[4.5vw] overflow-hidden object-fill  mt-1 rounded-md relative'>
+                                 <img className= 'rounded-1xl' src="https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg" alt="" />
                             </motion.div>)}
                         <h1 className="flex item-centre uppercase text-[6vw] h-full leading-[5vw] font-['Founders_Grotesk_X-Condensed'] font-medium">
                         {item}</h1>
@@ -33,7 +33,7 @@ function LandingPage() {
                 <p className='text-md font-light tracking-tight leading-none'>{item}</p>))}
         
             <div className="start flex item-centre gap-5"> 
-               <div className="px-5 py-2 border-[1px] border-zinc-500 font-light  text-md uppercase capitalized rounded-full">start the project</div>
+               <div className="px-5 py-2 border-[1px] border-zinc-500 font-light text-md uppercase capitalized rounded-full">start the project</div>
                <div className="w-10 h-10 flex items-centre justify-centre overflow-none border-[2px] border-zinc-400 font-light rounded-full ">
                    <span className='rotate-[45deg] pl-2 pt-1'>
                         <FaArrowUpLong/>

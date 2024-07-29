@@ -1,4 +1,4 @@
-import React, { useEffect,useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Eye() {
 
@@ -14,7 +14,7 @@ function Eye() {
 
             var angle = Math.atan2(deltaY,deltaX) * (180/Math.PI)
             setRotate(angle-180);
-            
+
         })
       })
 
