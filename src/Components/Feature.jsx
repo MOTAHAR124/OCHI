@@ -29,7 +29,7 @@ const handleHover = (index)=> {
             <h1 className='absolute text-[#CDEA68] flex right-0 overflow-hidden -translate-x-1/2 top-1/2 -translate-y-1/2 z-[10] text-8xl leading-none tracking-tighter"]'>
               {"FYDE".split('').map((item,index)=>
               
-              <motion.span initial={{y: "100%"}} 
+              <motion.span key={index} initial={{y: "100%"}} 
               animate={cards[0]} 
               transition={{ease: [0.22, 1, 0.36, 1], delay: index*0.1}}
               className='inline-block' >{item}</motion.span>)}
@@ -47,7 +47,7 @@ const handleHover = (index)=> {
                <div className="card w-full h-full rounded-xl overflow-hidden">
                  <h1 className='absolute flex overflow-hidden text-[#CDEA68] right-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[10] text-8xl leading-none tracking-tighter"]'>
                   {"VISE".split('').map((item,index)=>
-                 <motion.span initial={{y: "100%"}} 
+                 <motion.span key={index} initial={{y: "100%"}} 
                   animate={cards[1]} 
                   transition={{ease: [0.22, 1, 0.36, 1], delay: index*0.1}}
                   className='inline-block' >{item}</motion.span>)}
