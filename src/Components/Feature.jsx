@@ -14,21 +14,20 @@ const handleHover = (index)=> {
 }
 
   return (
-    <div className='w-full py-20 '>
-       <div className='w-full px-20 border-b-[1px] border-zinc-700 pb-20'>
-          <h1 className='text-6xl font-["Neue_Montreal"] tracking-tight'>Featured Projects</h1>
+    <div className='w-full py-12 md:py-16 lg:py-20 '>
+       <div className='w-full px-6 md:px-12 lg:px-20 border-b-[1px] border-zinc-700 pb-8 md:pb-12 lg:pb-20'>
+          <h1 className='text-3xl md:text-5xl lg:text-6xl font-["Neue_Montreal"] tracking-tight'>Featured Projects</h1>
       </div>
-     <div className="px-20">
-        <div className="cards w-full flex gap-10 mt-10">
-        
+     <div className="px-6 md:px-12 lg:px-20">
+        <div className="cards w-full flex flex-col lg:flex-row gap-6 md:gap-10 mt-6 md:mt-10">
+
            <motion.div 
            onHoverStart={()=> handleHover(0)}
            onHoverEnd={()=> handleHoverEnd(0)}
-           className="cardContainer relative w-1/2 h-[75vh]">
-    
+           className="cardContainer relative w-full lg:w-1/2 h-[45vh] md:h-[60vh] lg:h-[75vh]">
+
             <h1 className='absolute text-[#CDEA68] flex right-0 overflow-hidden -translate-x-1/2 top-1/2 -translate-y-1/2 z-[10] text-8xl leading-none tracking-tighter"]'>
               {"FYDE".split('').map((item,index)=>
-              
               <motion.span key={index} initial={{y: "100%"}} 
               animate={cards[0]} 
               transition={{ease: [0.22, 1, 0.36, 1], delay: index*0.1}}
@@ -37,13 +36,13 @@ const handleHover = (index)=> {
             </h1>
 
                <div className="card w-full h-full rounded-xl overflow-hidden">
-                  <img className='w-full h-full bg-cover' src="https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-663x551.png" alt="React" />
+                  <img className='w-full h-full object-cover' src="https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-663x551.png" alt="React" />
                </div>
            </motion.div>
            <motion.div
            onHoverStart={()=> handleHover(1)}
            onHoverEnd={()=> handleHoverEnd(1)}
-           className="cardContainer relative w-1/2 h-[75vh]">
+           className="cardContainer relative w-full lg:w-1/2 h-[45vh] md:h-[60vh] lg:h-[75vh]">
                <div className="card w-full h-full rounded-xl overflow-hidden">
                  <h1 className='absolute flex overflow-hidden text-[#CDEA68] right-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[10] text-8xl leading-none tracking-tighter"]'>
                   {"VISE".split('').map((item,index)=>
@@ -52,7 +51,7 @@ const handleHover = (index)=> {
                   transition={{ease: [0.22, 1, 0.36, 1], delay: index*0.1}}
                   className='inline-block' >{item}</motion.span>)}
                  </h1>
-                  <img className='w-full h-full bg-cover' src="https://ochi.design/wp-content/uploads/2022/09/Vise_front2-663x551.jpg" alt="React" />
+                  <img className='w-full h-full object-cover' src="https://ochi.design/wp-content/uploads/2022/09/Vise_front2-663x551.jpg" alt="React" />
                   
                </div>
            </motion.div>

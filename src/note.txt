@@ -1,0 +1,6 @@
+tried to copy an animated website known as OCHI
+used React and Tailwind CSS to build this project
+used LocomotiveScroll for smooth scrolling
+used framer-motion for animation
+build an eye that follows cursor where-ever it moves
+source code https://github.com/MOTAHAR124/OCHI.git
